@@ -1,0 +1,25 @@
+<!DOCTYPE htm>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Radiobutton - js</title>
+</head>
+<body>
+<div>
+  <input type="radio" name="animal" value="kissa" onchange="checkSelectedAnimal()" />Kissa<br/>
+  <input type="radio" name="animal" value="gorilla" onchange="checkSelectedAnimal()" />Gorilla<br/>
+  <input type="radio" name="animal" value="koira" onchange="checkSelectedAnimal()" />Koira<br/>
+  <input type="radio" name="animal" value="apina" onchange="checkSelectedAnimal()" />Apina<br/>
+  <p>Valintasi: <span id="valintasi"></span></p>
+</div>
+<script>
+function checkSelectedAnimal(){
+  var selectedAnimal = document.querySelector('input[name = "animal"]:checked').value;
+  document.getElementById("valintasi").innerHTML = selectedAnimal;
+}
+</script>
+
+
+
+</body>
+</html>
