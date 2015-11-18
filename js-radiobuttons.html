@@ -19,6 +19,22 @@ function checkSelectedAnimal(){
 }
 </script>
 
+<div>
+  <input type="radio" name="fruit" value="omena" onchange="checkSelectedFruit()" />Omena<br/>
+  <input type="radio" name="fruit" value="banaani" onchange="checkSelectedFruit()" />Banaani<br/>
+  <input type="radio" name="fruit" value="appelsiini" onchange="checkSelectedFruit()" />Appelsiini<br/>
+  <input type="radio" name="fruit" value="päärynä" onchange="checkSelectedFruit()" />Päärynä<br/>
+  <p>Valintasi: <span id="valintasi"></span></p>
+</div>
+<script>
+function checkSelectedFruit(){
+  var fruits = document.getElementsByName("fruit");
+  for (var i=0; i<fruits.length; i++){
+    alert
+  }
+}
+
+</script>
 
 
 </body>
