@@ -1,21 +1,59 @@
+<!DOCTYPE htm>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Valintarakenteet - switch / if - else if - else</title>
+</head>
+<body>
+
+<h1>switch</h1>
+
+<button onclick="tarkista(this.innerHTML)">kissa</button>
+<button onclick="tarkista(this.innerHTML)">koira</button>
+<button onclick="tarkista(this.innerHTML)">apina</button>
+<button onclick="tarkista(this.innerHTML)">gorilla</button>
+
+<p id="valintasi"></p>
+
 <script>
-if (valinta == "CF") {
 
-  CF();
+function tarkista(arvo) {
 
-} else if (valinta == "FC") {
-  FC();
+  if (arvo == "kissa") {
+    annaViesti("Valitsit kissan");
+  } else if (arvo == "koira") {
+    annaViesti("Valitsit koiran");
+  } else if (arvo == "apina") {
+    annaViesti("Valitsit apinan");
+  } else if (arvo == "gorilla") {
+    annaViesti("Valitsit gorillan");
+  } else {
+    annaViesti("Valitsit jotain muuta!?!");
+  }
 
 }
 
-    switch valinta {
-    case "CF":
-      CF();
+function tarkistaSwitch(arvo) {
+  switch (arvo) {
+    case "kissa":
+      annaViesti("Valitsit kissan");
       break;
-    case "FC":
+    case "koira":
+
+      break;
+    case "apina":
+
+      break;
+    case "gorilla":
 
       break;
     default:
+
+  }
+function annaViesti(viesti) {
+  var p = getElementById("vallintasi").innerHTML;
+  p = viesti;
+}
 
 }
 </script>
